@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+:root {
+    --lead : #212121;
+    --gold-finger : #F2BD12;
+    --eye-ball: #FFFDF7;
+    --hint-yellow: #FCF1CC;
+    --pure-white: #fff;
+}
+
+body{
+    background-color: var(--eye-ball);
+}
+
+/* BASIC STYLING */
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--lead);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap:30px
+}
+
+.gap-3 {
+    gap:48px
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding-inline: 24px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.p-top{
+    padding-top: 160px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 64px;
+}
+
+
+
+
+
+
+
+/* HEADER STYLING */
+.navbar {
+    min-height: 14vh;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+.btn {
+    display: inline-block;
+    padding: 14.5px 32px;
+    background: var(--gold-finger);
+    border-radius: 16px;
+    font-size: 18px;
+    color: var(--pure-white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px;
+    transition: .4s ease-in-out;
+}
+
+.btn:hover{
+    background: var(--lead);
+}
+
+.cart-icon{
+    font-size: 20.5px;
+    position: relative;
+}
+
+.cart-icon .cart-value{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: 15px;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    text-align: center;
+    justify-content: center;
+    line-height: 20px;
+}
+
+.dekstop-action .hamburger{
+    font-size: 24px;
+    display: none;
+}
+
+.mobile-manu {
+    display: none;
+}
+
+/* SECTION STYLING */
+.hero-section{
+    min-height: 86vh;
+}
+
+.content,
+.images-container,
+.service-card {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+h1 {
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+h1 span{
+    color: var(--gold-finger);
+}
+
+p {
+    font-size: 20px;
+    color: gray;
+    line-height: 28.8 px;
+    font-weight: 400;
+}
+
+.para {
+    margin-block: 32px;
+    max-width: 550px;
+}
+
+.social-icon{
+    background: var(--hint-yellow);
+    width: 48px;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icon:hover{
+    background-color: var(--lead);
+    color: #fff;
+}
+
+/* Section 1 */
+h5{
+    font-size: 20px;
+    letter-spacing: 3.2px;
+    color: var(--gold-finger);
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 60px;
+    text-transform: capitalize;
+    color: var(--lead);
+}
+
+h3{
+    font-size: 32px;
+    text-transform: capitalize;
+    color: var(--lead);
+}
+
+.service-card .h3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+
+/* FOOTER STYLING */
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 780px) {
+
+    /* HEADER */
+    .navlist,
+    .dekstop-action .btn {
+        display: none;
+    }
+
+    .dekstop-action .hamburger {
+        display: block;
+    }
+
+    .mobile-manu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        transform: translateX(-50%);
+        width: 320px;
+        padding: 32px;
+        border: 1.5px solid var(--gold-finger);
+        background: var(--pure-white);
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 8px 8px 8px;
+        box-shadow: rgba(0, 0, 0, 0.1) 8px 8px 8px inset;
+        transition: all 4s ease-in-out;
+    }
+
+    .mobile-menu-active {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* MAIN */
+    h1{
+        font-size: 58px;
+    }
+
+    .content {
+        padding-top: 48px;
+    }
+
+    .gap-2{
+        gap: 22.4px;
+    }
+
+    .gap-4{
+        gap: 64px;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+}
