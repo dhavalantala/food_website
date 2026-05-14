@@ -74,8 +74,14 @@ img{
     margin-top: 64px;
 }
 
+.mt-half {
+    margin-top: 8px;
+}
 
 
+.m-auto {
+    margin: auto;
+}
 
 
 
@@ -239,6 +245,83 @@ h4{
     padding: 20.8px 0 32px 0;
 }
 
+/* SECTION 3 */
+.review-container{
+    width: 650px;
+    max-width: 100%;
+    flex: 1;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.profile {
+    width: 64px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fa-star {
+    color: var(--gold-finger);
+}
+
+.arrow {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--gold-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 40px;
+}
+
+/* SECTION 4 */
+.app-container {
+    background: var(--hint-yellow);
+    padding: 48px 96px;
+    border-radius: 48px;
+    flex: 1;
+}
+.app-container .content h2 {
+    font-size: 72px;
+}
+
+.app-container image img {
+    width: 400px;
+}
+
+
+
+/* SECTION 5 */
+.input-container {
+    width : 688px;
+    max-width: 100%;
+    background: var(--pure-white);
+    padding: 12.8px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 8px;
+    border-radius: 16px;
+}
+
+input[type="email"]{
+    flex: 1;
+    height: 6vh;
+    background: transparent;
+    border: none;
+    font-size: 17.6px;
+    padding-left: 16px;
+}
+
+input[type="email"]:focus{
+    outline: none;
+}
+
 
 
 /* FOOTER STYLING */
@@ -302,5 +385,17 @@ h4{
 
     h2{
         font-size: 48px;
+    }
+
+    /* Section 3 */
+
+
+    /* Section 4 */
+    .app-container {
+        padding: 35.2px
+    }
+
+    .app-container .content h2 {
+        font: 56px;
     }
 }
