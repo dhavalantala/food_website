@@ -204,10 +204,41 @@ h3{
     color: var(--lead);
 }
 
-.service-card .h3 {
+.service-card h3 {
     margin-top: 24px;
     margin-bottom: 16px;
 }
+
+/* SECTION 2 */
+.order-card {
+    flex: 1;
+    flex-basis: 300px;
+    background: var(--pure-white);
+    padding: 0 16px 32px 16px;
+    border: 1.5px solid var(--gold-finger);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 8px 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 8px 8px 8px inset;
+}
+
+.order-card img {
+    width: 240px;
+    filter: drop-shadow(
+        rgba(0, 0, 0, 0.2) 0px 10px 10px
+    );
+}
+
+h4{
+    font-size:  28.8px;
+    color: var(--lead);
+}
+
+.order-card .price {
+    font-size: 27px;
+    color: var(--gold-finger);
+    padding: 20.8px 0 32px 0;
+}
+
 
 
 /* FOOTER STYLING */
